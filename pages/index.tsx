@@ -16,9 +16,9 @@ export default function IndexPage() {
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.6/css/line.css" />
       <link href="https://fonts.maateen.me/kalpurush/font.css" rel="stylesheet" />
       <title>Darul Islam Foundation</title>
-      <meta property="og:title" content="Darus Salaf Foundation" />
+      <meta property="og:title" content="দারুল ইসলাম ফাউন্ডেশন" />
       <meta property="og:description" content="A non-profit organization for preaching the Truth and Light of Islam with the guidance of the Holy Quran and Sahih Sunnah according to the footsteps of the Righteous Preceders." />
-      <meta property="og:image" content="/banner.jpg" />
+      <meta property="og:image" content="/banner.png" />
       <meta property="og:url" content="https://darulislam.foundation" />
       <meta name="keywords" content="darussalaf darus salaf salaf-salehin darus-salaf foundation preaching quran sahih sunnah preceders" />
     </Head>
