@@ -23,7 +23,7 @@ export default function Footer() {
                     সাহায্য
                 </a>
                 <a href="#" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                    আগত প্রজেক্ট
+                    আগত প্রজেক্টসমূহ
                 </a>
             </div>
 
@@ -33,10 +33,10 @@ export default function Footer() {
                 </div>
 
                 <a href="https://apnardeenijiggasa.com" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                    ApnarDeeniJiggasa.Com
+                    আপনার দ্বীনি জিজ্ঞাসা
                 </a>
                 <a href="https://darussalaf.foundation" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                    Darus Salaf
+                    দারুস সালাফ
                 </a>
                 <a href="https://islamhouse.com/bn" className="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                     Islam House
