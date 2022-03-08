@@ -1,6 +1,9 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import Image from 'next/image'
+import logo from '../../images/darulislam100.png'
+import banner from '../../images/darulislamBanner.jpg'
 
 const navigation = [
     { name: 'Projects', href: '#' },
@@ -32,9 +35,10 @@ export default function Header() {
                                     <div className="flex items-center justify-between w-full md:w-auto">
                                         <a href="#">
                                             <span className="sr-only">Workflow</span>
-                                            <img
+                                            <Image
+                                                alt='logo'
                                                 className="h-8 w-auto sm:h-10"
-                                                src="https://i.ibb.co/sbTg6Hc/darulislam.jpg"
+                                                src={logo}
                                             />
                                         </a>
                                         <div className="-mr-2 flex items-center md:hidden">
@@ -71,10 +75,10 @@ export default function Header() {
                                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                                     <div className="px-5 pt-4 flex items-center justify-between">
                                         <div>
-                                            <img
+                                            <Image
                                                 className="h-8 w-auto"
-                                                src="https://i.ibb.co/sbTg6Hc/darulislam.jpg"
-                                                alt=""
+                                                src={logo}
+                                                alt="logo"
                                             />
                                         </div>
                                         <div className="-mr-2">
@@ -114,7 +118,7 @@ export default function Header() {
                                 <span className="block text-green-500 xl:inline">'দারুল ইসলাম' ফাউন্ডেশন এ</span>
                             </h1>
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                            দারুল ইসলাম একটি অলাভজনক অরগানাইজেশন যার মূল লক্ষ্য হলো পবিত্র কুরআন ও সহীহ হাদীসের আলোকে ইসলামের আলো চারিদিকে ছড়িয়ে দেয়া। বিভিন্ন প্রজেক্ট বাস্তবায়ন করার মাধ্যমে দারুল ইসলাম তার লক্ষ্য ও উদ্দেশ্যে এগিয়ে যাচ্ছে।
+                                দারুল ইসলাম একটি অলাভজনক অরগানাইজেশন যার মূল লক্ষ্য হলো পবিত্র কুরআন ও সহীহ হাদীসের আলোকে ইসলামের আলো চারিদিকে ছড়িয়ে দেয়া। বিভিন্ন প্রজেক্ট বাস্তবায়ন করার মাধ্যমে দারুল ইসলাম তার লক্ষ্য ও উদ্দেশ্যে এগিয়ে যাচ্ছে।
                             </p>
                             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                                 <div className="rounded-md shadow">
@@ -139,9 +143,9 @@ export default function Header() {
                 </div>
             </div>
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
-                <img
+                <Image
                     className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src="https://i.ibb.co/2vBNsgY/banner.jpg"
+                    src={banner}
                     alt="home banner"
                 />
             </div>

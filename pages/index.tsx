@@ -18,7 +18,7 @@ export default function IndexPage() {
       <title>দারুল ইসলাম ফাউন্ডেশন</title>
       <meta property="og:title" content="দারুল ইসলাম ফাউন্ডেশন" />
       <meta property="og:description" content="A non-profit organization for preaching the Truth and Light of Islam with the guidance of the Holy Quran and Sahih Sunnah according to the footsteps of the Righteous Preceders." />
-      <meta property="og:image" content="/banner.png" />
+      <meta property="og:image" content="/banner.jpg" />
       <meta property="og:url" content="https://darulislam.foundation" />
       <meta name="keywords" content="darussalaf darus salaf salaf-salehin darus-salaf foundation preaching quran sahih sunnah preceders" />
     </Head>
