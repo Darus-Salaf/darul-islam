@@ -2,8 +2,6 @@ import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
-import logo from '../../images/darulislam100.png'
-import banner from '../../images/darulislamBanner.jpg'
 
 const navigation = [
     { name: 'Projects', href: '#' },
@@ -36,10 +34,10 @@ export default function Header() {
                                     <div className="flex items-center justify-between w-full md:w-auto">
                                         <a href="#">
                                             <span className="sr-only">Workflow</span>
-                                            <Image
+                                            <img
                                                 alt='logo'
                                                 className="h-8 w-auto sm:h-10"
-                                                src={logo}
+                                                src='https://i.ibb.co/WVXV552/darulislam100.png'
                                             />
                                         </a>
                                         <div className="-mr-2 flex items-center md:hidden">
@@ -76,10 +74,10 @@ export default function Header() {
                                 <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                                     <div className="px-5 pt-4 flex items-center justify-between">
                                         <div>
-                                            <Image
+                                            <img
                                                 className="h-8 w-auto"
-                                                src={logo}
-                                                alt="logo"
+                                                src='https://i.ibb.co/WVXV552/darulislam100.png'
+                                                alt='logo'
                                             />
                                         </div>
                                         <div className="-mr-2">
@@ -146,7 +144,7 @@ export default function Header() {
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <Image
                     className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src={banner}
+                    src='https://i.ibb.co/M7qKmyz/darulislam-Banner.jpg'
                     alt="home banner"
                 />
             </div>
