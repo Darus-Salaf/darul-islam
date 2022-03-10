@@ -1,6 +1,8 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { MenuIcon, XIcon } from '@heroicons/react/outline'
+import banner from '../../images/darulislamBanner.jpg'
+import Image from 'next/image'
 
 const navigation = [
     { name: 'Projects', href: '#' },
@@ -11,6 +13,8 @@ const navigation = [
 
 
 export default function Header() {
+
+    const myLoader = () => 'https://i.ibb.co/M7qKmyz/darulislam-Banner.jpg'
 
     return (
         <div className="relative bg-white overflow-hidden">
@@ -35,8 +39,8 @@ export default function Header() {
                                             <span className="sr-only">Workflow</span>
                                             <img
                                                 alt='logo'
-                                                className="h-8 w-auto sm:h-10"
-                                                src='https://i.ibb.co/WVXV552/darulislam100.png'
+                                                className="h-24 w-auto sm:h-24"
+                                                src='https://darulislam.foundation/images/darulislam300.png'
                                             />
                                         </a>
                                         <div className="-mr-2 flex items-center md:hidden">
@@ -74,8 +78,8 @@ export default function Header() {
                                     <div className="px-5 pt-4 flex items-center justify-between">
                                         <div>
                                             <img
-                                                className="h-8 w-auto"
-                                                src='https://i.ibb.co/WVXV552/darulislam100.png'
+                                                className="h-20 w-auto"
+                                                src='https://darulislam.foundation/images/darulislam300.png'
                                                 alt='logo'
                                             />
                                         </div>
@@ -111,9 +115,8 @@ export default function Header() {
                     <main className="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
                         <div className="sm:text-center lg:text-left">
                             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl">
-                                <span className="block xl:inline">আসসালামু আলাইকুম !</span>{' '}
-                                <span className="block">স্বাগত</span>{' '}
-                                <span className="block text-green-500 xl:inline">'দারুল ইসলাম' ফাউন্ডেশন এ</span>
+                                <span className="block">আসসালামু আলাইকুম !</span> <br />
+                                <span className="block text-green-500 xl:inline">'দারুল ইসলাম' ফাউন্ডেশনে স্বাগত</span>
                             </h1>
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                                 দারুল ইসলাম একটি অলাভজনক অরগানাইজেশন যার মূল লক্ষ্য হলো পবিত্র কুরআন ও সহীহ হাদীসের আলোকে ইসলামের আলো চারিদিকে ছড়িয়ে দেয়া। বিভিন্ন প্রজেক্ট বাস্তবায়ন করার মাধ্যমে দারুল ইসলাম তার লক্ষ্য ও উদ্দেশ্যে এগিয়ে যাচ্ছে।
@@ -142,8 +145,8 @@ export default function Header() {
             </div>
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <img
-                    className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src='https://i.ibb.co/M7qKmyz/darulislam-Banner.jpg'
+                    className=" w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
+                    src='https://darulislam.foundation/images/darulislamBanner.jpg'
                     alt="home banner"
                 />
             </div>
