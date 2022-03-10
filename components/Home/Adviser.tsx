@@ -10,7 +10,7 @@ export default function Adviser() {
     <div className="bg-white">
       <div className="max-w-2xl mx-auto pt-14 pb-20 px-4 grid items-center grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:pt-14 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
         <div>
-          <h1 className="text-3xl font-extrabold tracking-tight text-green-500 sm:text-4xl">উপদেষ্টা মণ্ডলী</h1>
+          <h1 className="text-3xl font-extrabold tracking-tight primary sm:text-4xl">উপদেষ্টা মণ্ডলী</h1>
           <p className="mt-4 text-gray-500">
             দারুল ইসলাম বিশিষ্ট্য চিন্তাবিদ ও ইসলামিক স্কলারগণের উপদেশ ও পরামর্শের ভিত্তিতে পরিচালিত হয়ে থাকে।<br />
             তাঁদের মূল্যমান নসীহাহ ও পরামর্শের মাধ্যমে দারুল ইসলাম এগিয়ে যাচ্ছে ফালিল্লাহিল হামদ।

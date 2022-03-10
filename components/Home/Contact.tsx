@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="my-20">
             <div className="mb-10 px-5 md:text-center">
                 <h2 className="text-base text-gray-700 font-semibold tracking-wide uppercase">যোগাযোগ করুন</h2>
-                <p className="mt-2 text-green-600 text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+                <p className="mt-2 primary text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
                     জানাতে পারেন যেকোনো প্রশ্ন অথবা উপদেশ
                 </p>
             </div>
@@ -96,7 +96,7 @@ export default function Contact() {
                         <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
                             <button
                                 type="submit"
-                                className="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-green-600 hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+                                className="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-md text-white primary-bg hover:primary-bg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
                             >
                                 Send
                             </button>

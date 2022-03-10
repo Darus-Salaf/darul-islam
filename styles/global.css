@@ -1,3 +1,18 @@
 * {
     font-family: Kalpurush;
 }
+.primary {
+    color: #ae7341 !important;
+}
+.primary-dark {
+    color: #7c4f1d !important;
+}
+.primary-bg {
+    background-color: #ae7341 !important;
+}
+.primary-dark-bg {
+    background-color: #7c4f1d !important;
+}
+.primary-superlite-bg {
+    background-color: #ae734145;
+}

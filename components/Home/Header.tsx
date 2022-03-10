@@ -40,7 +40,7 @@ export default function Header() {
                                             <img
                                                 alt='logo'
                                                 className="h-24 w-auto sm:h-24"
-                                                src='https://darulislam.foundation/images/darulislam300.png'
+                                                src='https://www.darulislam.foundation/images/darulislam300.png'
                                             />
                                         </a>
                                         <div className="-mr-2 flex items-center md:hidden">
@@ -79,7 +79,7 @@ export default function Header() {
                                         <div>
                                             <img
                                                 className="h-20 w-auto"
-                                                src='https://darulislam.foundation/images/darulislam300.png'
+                                                src='https://www.darulislam.foundation/images/darulislam300.png'
                                                 alt='logo'
                                             />
                                         </div>
@@ -103,7 +103,7 @@ export default function Header() {
                                     </div>
                                     <a
                                         href="#"
-                                        className="block w-full px-5 py-3 text-center font-medium text-green-600 bg-gray-50 hover:bg-gray-100"
+                                        className="block w-full px-5 py-3 text-center font-medium primary bg-gray-50 hover:bg-gray-100"
                                     >
                                         Log in
                                     </a>
@@ -116,7 +116,7 @@ export default function Header() {
                         <div className="sm:text-center lg:text-left">
                             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-5xl">
                                 <span className="block">আসসালামু আলাইকুম !</span> <br />
-                                <span className="block text-green-500 xl:inline">'দারুল ইসলাম' ফাউন্ডেশনে স্বাগত</span>
+                                <span className="block primary xl:inline">'দারুল ইসলাম' ফাউন্ডেশনে স্বাগত</span>
                             </h1>
                             <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
                                 দারুল ইসলাম একটি অলাভজনক অরগানাইজেশন যার মূল লক্ষ্য হলো পবিত্র কুরআন ও সহীহ হাদীসের আলোকে ইসলামের আলো চারিদিকে ছড়িয়ে দেয়া। বিভিন্ন প্রজেক্ট বাস্তবায়ন করার মাধ্যমে দারুল ইসলাম তার লক্ষ্য ও উদ্দেশ্যে এগিয়ে যাচ্ছে।
@@ -125,7 +125,7 @@ export default function Header() {
                                 <div className="rounded-md shadow">
                                     <a
                                         href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-500 hover:bg-green-600 md:py-4 md:text-lg md:px-10"
+                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white primary-bg hover:primary-dark-bg md:py-4 md:text-lg md:px-10"
                                     >
                                         প্রজেক্টসমূহ
                                     </a>
@@ -133,7 +133,7 @@ export default function Header() {
                                 <div className="mt-3 sm:mt-0 sm:ml-3">
                                     <a
                                         href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-green-100 hover:bg-green-200 md:py-4 md:text-lg md:px-10"
+                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-700 primary-superlite-bg hover:bg-green-200 md:py-4 md:text-lg md:px-10"
                                     >
                                         আরো জানুন
                                     </a>
@@ -145,8 +145,8 @@ export default function Header() {
             </div>
             <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
                 <img
-                    className=" w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
-                    src='https://darulislam.foundation/images/darulislamBanner.jpg'
+                    className="w-full object-cover lg:w-full lg:h-full"
+                    src='https://www.darulislam.foundation/images/darulislamBanner.jpg'
                     alt="home banner"
                 />
             </div>

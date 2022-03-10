@@ -4,7 +4,7 @@ export default function Projects() {
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
           <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 sm:static">
             <div className="sm:max-w-lg">
-              <h1 className="text-4xl font font-extrabold tracking-tight text-green-500 sm:text-6xl">
+              <h1 className="text-4xl font font-extrabold tracking-tight primary sm:text-6xl">
                 আমাদের প্রজেক্টসমূহ
               </h1>
               <p className="mt-4 text-xl text-gray-500">
@@ -81,7 +81,7 @@ export default function Projects() {
   
                 <a
                   href="#"
-                  className="inline-block text-center bg-green-500 border border-transparent rounded-md py-3 px-8 font-medium text-white hover:bg-green-600"
+                  className="inline-block text-center primary-bg border border-transparent rounded-md py-3 px-8 font-medium text-white hover:primary-bg"
                 >
                   সকল প্রজেক্ট দেখুন
                 </a>
