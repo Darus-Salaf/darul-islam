@@ -25,7 +25,7 @@ export default function BookDialog({ name, id }) {
     if (name === '' || address === '' || mobile.length < 11) {
       alert('অনুগ্রহ করে সবগুলো ঘরে সঠিক তথ্য দিন')
     } else {
-      fetch('http://localhost:5000/datacenter/api/bookgiveway', {
+      fetch('https://darulislam.foundation/datacenter/api/bookgiveway', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

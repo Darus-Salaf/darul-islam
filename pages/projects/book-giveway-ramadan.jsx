@@ -8,7 +8,7 @@ export default function Book_Giveway() {
   const [al, setAl] = useState([])
   const [mn, setMn] = useState([])
   useEffect(() => {
-    fetch('http://localhost:5000/datacenter/api/bookgiveway')
+    fetch('https://darulislam.foundation/datacenter/api/bookgiveway')
       .then(res => res.json())
       .then(data => {
         setTh(data.tawheed)
