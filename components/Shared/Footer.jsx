@@ -74,7 +74,7 @@ export default function Footer() {
             border-t border-gray-500 text-gray-300 text-sm 
             flex-col md:flex-row max-w-6xl">
                 <div className="mt-2">
-                    © Copyright 2019-2021. || Darul Islam Foundation. No Right Reserved.
+                    © Copyright 2019-2021. || Darul Islam Foundation. <a style={{textDecoration: 'underline'}} href="https://fb.com/rabibinsalam">Developer</a>
                 </div>
 
                 <div className="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">

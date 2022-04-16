@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useState } from 'react'
 
-export default function BookDialog({ name }) {
+export default function BookDialog({ name, id }) {
 
   const [isOpen, setIsOpen] = useState(false)
   const [info, setInfo] = useState({
@@ -25,15 +25,20 @@ export default function BookDialog({ name }) {
     if (name === '' || address === '' || mobile.length < 11) {
       alert('অনুগ্রহ করে সবগুলো ঘরে সঠিক তথ্য দিন')
     } else {
-      fetch('https://darulislam.foundation/datacenter/api/book-giveway', {
+      fetch('http://localhost:5000/datacenter/api/bookgiveway', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ name, address, mobile, book: name })
+        body: JSON.stringify({ name, address, mobile, book: name, bookid: id })
       })
         .then(res => res.json())
-        .then(inf => console.log(inf))
+        .then(inf => {
+          if (inf.message === 'data successfully created') {
+            alert('আপনার তথ্য পাঠানো হয়েছে। ফলাফলের জন্য অপেক্ষা করুন।')
+            setIsOpen(false)
+          } else alert('ত্রুটি পাওয়া গিয়েছে, আবার চেষ্টা করুন।')
+        })
         .catch(err => alert(err.message))
     }
   }
@@ -100,7 +105,7 @@ export default function BookDialog({ name }) {
                     onChange={onChange}
                     id="name"
                     autoComplete="name"
-                    placeholder='Rabius Sunny'
+                    placeholder='রবিউস সানী'
                     className="mt-1 focus:ring-slate-500 focus:border-slate-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
@@ -114,7 +119,7 @@ export default function BookDialog({ name }) {
                     onChange={onChange}
                     id="address"
                     autoComplete="address"
-                    placeholder='College Road, Rangpur Sadar, Rangpur'
+                    placeholder='থানার নাম, জেলার নাম'
                     className="mt-1 focus:ring-slate-500 focus:border-slate-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                   />
                 </div>
