@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import 'tailwindcss/tailwind.css'
 import Header from '../components/Home/Header'
 import Featured from '../components/Home/Featured'
 import JoinUs from '../components/Home/JoinUs'
@@ -7,7 +6,6 @@ import Contact from '../components/Home/Contact'
 import Adviser from '../components/Home/Adviser'
 import Projects from '../components/Home/Projects'
 import Blog from '../components/Home/Blog'
-import Footer from '../components/Shared/Footer'
 
 export default function IndexPage() {
   return <>
