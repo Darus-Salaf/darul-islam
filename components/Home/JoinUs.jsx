@@ -18,7 +18,7 @@ export default function JoinUs() {
             <div className="ml-3 inline-flex rounded-md shadow">
               <a
                 href="#"
-                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md primary bg-white hover:bg-green-200"
+                className="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-primary bg-white hover:bg-green-200"
               >
                 আরো জানুন
               </a>

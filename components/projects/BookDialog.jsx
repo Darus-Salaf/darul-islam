@@ -36,6 +36,7 @@ export default function BookDialog({ name, id }) {
         .then(inf => {
           if (inf.message === 'data successfully created') {
             alert('আপনার তথ্য পাঠানো হয়েছে। ফলাফলের জন্য অপেক্ষা করুন।')
+            localStorage.setItem('get', true)
             setIsOpen(false)
           } else alert('ত্রুটি পাওয়া গিয়েছে, আবার চেষ্টা করুন।')
         })

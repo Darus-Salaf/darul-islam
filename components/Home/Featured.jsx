@@ -45,7 +45,7 @@ export default function Featured() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="text-base text-gray-700 font-semibold tracking-wide uppercase">আমাদের লক্ষ্য</h2>
-          <p className="mt-2 primary text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+          <p className="mt-2 text-primary text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
             সুষ্ঠু পরিকল্পনার মাধ্যমে সত্য ও আলো ছড়িয়ে দেয়া
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">

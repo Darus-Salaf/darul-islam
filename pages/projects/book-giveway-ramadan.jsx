@@ -7,6 +7,8 @@ export default function Book_Giveway() {
   const [th, setTh] = useState([])
   const [al, setAl] = useState([])
   const [mn, setMn] = useState([])
+  const [get, setGet] = useState(false)
+
   useEffect(() => {
     fetch('https://darulislam.foundation/datacenter/api/bookgiveway')
       .then(res => res.json())
@@ -16,6 +18,9 @@ export default function Book_Giveway() {
         setMn(data.manhaj)
       })
       .catch(err => console.log(err.message))
+  }, [])
+  useEffect(() => {
+    setGet(localStorage.getItem('get'))
   }, [])
 
   const books = [
@@ -59,7 +64,7 @@ export default function Book_Giveway() {
     <div className=" mb-4">
 
       <div className="py-8 mt-8 mb-10 text-center rounded-md shadow-lg">
-        <h2 className="text-4xl primary font-bold sm:text-6xl text-white">
+        <h2 className="text-4xl text-primary font-bold sm:text-6xl">
           ফ্রি বই বিতরণ <sub className="text-sm sub">(শর্ত প্রযোজ্য)</sub>
         </h2>
         <h1 className="text-xl mt-4 sm:text-2xl">বই বিতরণ, জ্ঞান  বিতরণ <sub className="text-sm sub">দারুল ইসলাম ফাউন্ডেশন</sub></h1>
@@ -91,14 +96,20 @@ export default function Book_Giveway() {
               <div className="text-center" style={{ maxWidth: '300px' }}>
                 <img src={book.thumb} alt="book thumbnail" />
                 <h3 className="text-2xl sm:text-3xl font-bold my-4">{book.name}</h3>
-                <BookDialog name={book.name} id={book.bookid} />
+                {get ?
+                  <button
+                    className="primary-bg text-white px-8 py-2 rounded shadow-md text-xl"
+                  >
+                    রিকুয়েস্ট করেছেন
+                  </button> :
+                  <BookDialog name={book.name} id={book.bookid} />}
                 <div className="pt-8 text-sm flex justify-between">
                   <p>স্টকঃ {book.stock} টি</p>
                   <p>অনুরোধঃ {book.length} টি</p>
                 </div>
                 <div className="flex justify-center">
-                <button onClick={() => alert('ফলাফলের জন্য অপেক্ষা করুন')} className="w-full primary-bg py-2 text-white mt-4 mr-4 rounded-t-md">ফলাফল দেখুন</button>
-                <button onClick={() => alert('অনুরোধের জন্য অপেক্ষা করুন')} className="w-full primary-bg py-2 text-white mt-4 rounded-t-md">অনুরোধগুলো দেখুন</button>
+                  <button onClick={() => alert('ফলাফলের জন্য অপেক্ষা করুন')} className="w-full primary-bg py-2 text-white mt-4 mr-4 rounded-t-md">ফলাফল দেখুন</button>
+                  <button onClick={() => alert('অনুরোধের জন্য অপেক্ষা করুন')} className="w-full primary-bg py-2 text-white mt-4 rounded-t-md">অনুরোধগুলো দেখুন</button>
                 </div>
               </div>
             </div>)

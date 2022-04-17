@@ -5,32 +5,32 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline'
 import Link from 'next/link'
 
 const navigation = [
-  { name: 'Projects', href: '/projects' },
-  { name: 'Blogs', href: '/' },
-  { name: 'About us', href: '/' },
-  { name: 'Help', href: '/' },
+  { name: 'প্রজেক্ট', href: '/projects' },
+  { name: 'ব্লগ', href: '/' },
+  { name: 'আমাদের সম্পর্কে', href: '/' },
+  { name: 'সাহায্য', href: '/' },
 ]
 
 export default function Navigation() {
   return <>
     <Working />
     <Popover>
-      <div className="z-10 relative pt-6 px-4 sm:px-6 lg:px-8 sm:mb-8 ">
+      <div className="z-10 relative py-6 px-4 sm:px-6 lg:px-8 sm:mb-8 shadow-lg ">
         <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
           <div className="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
             <div className="flex items-center justify-between w-full md:w-auto">
               <Link href="/">
-                <a>
-                  <span className="sr-only">Workflow</span>
+                <a className='flex items-center font-bold text-primary-100 text-lg sm:text-2xl'>
                   <img
                     alt='logo'
-                    className="h-24 w-auto sm:h-24"
+                    className="h-12 sm:h-16 lg:h-24"
                     src='https://www.darulislam.foundation/images/darulislam300.png'
                   />
+                  <span className="text-primary">দারুল ইসলাম ফউন্ডেশন</span>
                 </a>
               </Link>
               <div className="-mr-2 flex items-center md:hidden">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
                   <span className="sr-only">Open main menu</span>
                   <MenuIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -44,7 +44,7 @@ export default function Navigation() {
                 href={item.href}
               >
                 <a
-                  className="font-medium text-gray-500 hover:text-yellow-900"
+                  className="font-medium text-gray-500 hover:text-primary"
                 >
                   {item.name}
                 </a>
@@ -70,14 +70,19 @@ export default function Navigation() {
           <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
             <div className="px-5 pt-4 flex items-center justify-between">
               <div>
-                <img
-                  className="h-20 w-auto"
-                  src='https://www.darulislam.foundation/images/darulislam300.png'
-                  alt='logo'
-                />
+              <Link href="/">
+                <a className='flex items-center font-bold text-primary text-md'>
+                  <img
+                    alt='logo'
+                    className="h-12"
+                    src='https://www.darulislam.foundation/images/darulislam300.png'
+                  />
+                  <span className="">দারুল ইসলাম ফউন্ডেশন</span>
+                </a>
+              </Link>
               </div>
               <div className="-mr-2">
-                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
+                <Popover.Button className="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary">
                   <span className="sr-only">Close main menu</span>
                   <XIcon className="h-6 w-6" aria-hidden="true" />
                 </Popover.Button>
@@ -90,7 +95,7 @@ export default function Navigation() {
                   href={item.href}
                 >
                   <a
-                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                    className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-100"
                   >
                     {item.name}
                   </a></Link>
@@ -98,7 +103,7 @@ export default function Navigation() {
             </div>
             <a
               href="#"
-              className="block w-full px-5 py-3 text-center font-medium primary bg-gray-50 hover:bg-gray-100"
+              className="block w-full px-5 py-3 text-center font-medium text-primary bg-gray-50 hover:bg-gray-100"
             >
               Log in
             </a>

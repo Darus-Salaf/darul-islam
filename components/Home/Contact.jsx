@@ -5,7 +5,7 @@ export default function Contact() {
         <div className="my-20">
             <div className="mb-10 px-5 md:text-center">
                 <h2 className="text-base text-gray-700 font-semibold tracking-wide uppercase">যোগাযোগ করুন</h2>
-                <p className="mt-2 primary text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
+                <p className="mt-2 text-primary text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
                     জানাতে পারেন যেকোনো প্রশ্ন অথবা উপদেশ
                 </p>
             </div>
